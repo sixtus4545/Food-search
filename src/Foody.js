@@ -2,6 +2,7 @@ import React,{useEffect, useState, Fragment} from 'react'
 import Recipes from './Recipes'
 import "./my styles/App.css"
 import Loading from './loading'
+
 const App=()=>{
 
 const APP_ID="process.env.APP_ID";
@@ -46,7 +47,7 @@ return(
 			  <header className="search">
 			  <h1 className="logo">FOODY-SEARCH</h1>
 			  <form onSubmit={getSearch}className="search-form">
-				<input className="search-bar" type="text"value={search} onChange={updateSearch}/>
+				<input className="search-bar" placeholder="search food name to get recipes"type="text"value={search} onChange={updateSearch}/>
 				<button className="search-button"type="submit">search</button>
 			  </form>
 			  </header>
